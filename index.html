@@ -17,44 +17,43 @@
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       .perfil-foto {
-  max-width: 200px;
-  border-radius: 460px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
+      max-width: 200px;
+      border-radius: 460px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+      filter: contrast(110%);
+      }
 
-.flip-box {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  perspective: 1000px;
-}
+      .foto {
+      background-color: transparent;
+      width: 200px;
+      height: 200px;
+      }
 
-.flip-box-inner {
-  position: relative;
-  width: 30%;
-  height: 30%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
+      .perfil-foto:hover {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      }
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
+      .button {
+      background-color: #757575; /* Gray */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%
+      }
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+      .button:hover {
+      background-color: #E91E63; /* Pink */
+      }
 
-.flip-box-back {
-  transform: rotateY(180deg);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
+      .button1 {border-radius: 4px;}
+
     </style>
     
   </head>
@@ -75,16 +74,10 @@
             <div class="w3-container">
               <div class="w3-display-container">
                 <br>
-                <div class="flip-box">
-                 <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                    <img src="https://github.com/AnaCarolinaXavier.png" class="perfil-foto">
-                    </div>
-                    <div class="flip-box-back">
-                    <img src="https://github.com/AnaCarolinaXavier.png" class="perfil-foto">
-                    </div>
-                 </div>
-                </div>     
+                <div class="foto">
+                  <img src="https://github.com/AnaCarolinaXavier.png" class="perfil-foto">
+                </div>
+                 
               </div>
               <h2>Ana Carolina Xavier</h2>
             </div>
@@ -135,7 +128,10 @@
               <div class="w3-light-grey w3-round-xlarge">
                 <div class="w3-round-xlarge w3-pink" style="height:24px;width:20%"></div>
               </div>
-              <br>
+              <hr>
+		            <p class="w3-large w3-text-theme">
+                <button class="button button1 fa fa-paint-brush fa-fw w3-margin-right w3-text-white"> Portfolio</button>
+              </p>
             </div>
           </div><br>
   
